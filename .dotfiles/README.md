@@ -69,3 +69,8 @@ config config --local status.showUntrackedFiles no
 When updating files for the repo use the alias `config` rather than the `git` command.  The repo tracks files in the home folder and subfolders; if there are files outside of the home folder then use some other technique like symlinks.  The `.dotfiles` folder contains this readme and any scripts, configs, or other artifacts that aren't home folder configuration files.
 
 This sets up a bare repo in $HOME that references the entire $HOME tree.  Configuring showUntrackedFiles means only already tracked files will be in `config status`, so you don't see _everything_ in the lists.
+
+# Next Steps
+
+[Ubuntu](../.dotfiles/README_ubuntu.md)
+[Mac OS](../.dotfiles/README_mac.md)
