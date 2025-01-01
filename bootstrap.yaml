@@ -1,0 +1,22 @@
+- name: Show system distro
+  hosts: localhost
+  gather_facts: yes
+  tasks:
+    - name: Show infos
+      debug: msg="{{ item }}"
+      with_items:
+      - "{{ ansible_distribution }}"
+
+- name: Bootstrap all the things
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: print
+      ansible.builtin.debug:
+        msg: Testing
+      when: ansible_distribution == "Pop!_OS"
+
+
+
+
+
